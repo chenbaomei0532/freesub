@@ -30,14 +30,16 @@ proxies:
     headers:
       Host: pl2.lckdwn.ru
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 94.183.209.59
+  server: 144.31.5.64
   port: 443
   udp: true
   type: vless
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  network: ws
-  ws-opts:
-    path: /
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 144.31.2.33
   port: 443
@@ -48,7 +50,7 @@ proxies:
   tls: true
   servername: pl3.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 144.31.5.3
   port: 443
@@ -59,7 +61,6 @@ proxies:
   tls: true
   servername: pl4.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: streambox.wwwinternetvideo.click
   port: 443
@@ -67,8 +68,17 @@ proxies:
   type: hysteria2
   password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
   sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: 94.183.209.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
   server: admin.wwwinternetvideo.click
   port: 443
   udp: true
@@ -76,16 +86,6 @@ proxies:
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 194.61.121.93
   port: 7538
