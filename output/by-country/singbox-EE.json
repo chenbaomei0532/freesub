@@ -26,11 +26,7 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
