@@ -4,33 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -42,7 +17,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -50,6 +25,26 @@
         "enabled": true,
         "server_name": "msk.frkn.org",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
       }
     },
     {
