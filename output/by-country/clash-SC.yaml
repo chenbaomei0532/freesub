@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 162.159.45.19
+  server: 108.162.198.178
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 162.159.0.169
   port: 2052
   udp: true
   type: vless
@@ -15,18 +26,29 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 104.18.34.14
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: 162.159.43.187
   port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  server: 162.159.45.19
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -47,6 +69,8 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +79,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 rules:
 - MATCH,PROXIES
