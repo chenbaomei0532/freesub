@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
+      "server": "188.114.96.7",
+      "server_port": 8443,
+      "uuid": "362a79a2-ce89-8d2d-355c-f1f5071a445f",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "fragrant-unit-d662.mmammatrix770088.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "fragrant-unit-d662.mmammatrix770088.workers.dev"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
