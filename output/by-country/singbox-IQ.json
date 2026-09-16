@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "181.214.147.216",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "172.66.47.132",
       "server_port": 443,
-      "uuid": "8e403675-d020-4801-9520-9cba4bbfda0e",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
       "tls": {
         "enabled": true,
-        "server_name": "lith.2clash.ru",
+        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
-          "short_id": ""
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pRXE5ot0RZaQSr7B",
+        "headers": {
+          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
