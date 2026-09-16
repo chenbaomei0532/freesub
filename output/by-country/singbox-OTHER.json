@@ -6,63 +6,45 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "104.20.30.10",
+      "server_port": 443,
+      "uuid": "91d28760-ecf1-450b-9170-d310111a0e6d",
+      "tls": {
+        "enabled": true,
+        "server_name": "us9.69lover.my",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/api/v2/63e9687fa53e441c/stream",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+          "Host": "us9.69lover.my"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
-      "server": "104.16.71.213",
+      "server": "104.20.30.10",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "91d28760-ecf1-450b-9170-d310111a0e6d",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "us9.69lover.my",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/api/v2/63e9687fa53e441c/stream",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "us9.69lover.my"
         }
       }
     },
@@ -72,9 +54,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe",
-        "🌐 其他地区 (Other) 03 - xiaohe",
-        "🌐 其他地区 (Other) 04 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ]
     },
     {
@@ -82,9 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe",
-        "🌐 其他地区 (Other) 03 - xiaohe",
-        "🌐 其他地区 (Other) 04 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
