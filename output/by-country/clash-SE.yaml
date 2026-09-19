@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 5.157.10.147
-  port: 443
+  server: 193.42.39.10
+  port: 33743
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   tls: true
   reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
