@@ -32,10 +32,7 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn"
-        }
+        "type": "ws"
       }
     },
     {
