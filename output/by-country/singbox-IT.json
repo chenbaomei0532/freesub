@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
-      "server": "57.131.48.45",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -21,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
+      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
       "server": "31.77.201.33",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -39,6 +31,14 @@
           "short_id": "4fa44664f6a566d3"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
+      "server": "57.131.48.45",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
     },
     {
       "type": "vless",
