@@ -25,55 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "cloud.figmafound.org",
-      "server_port": 443,
-      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloud.figmafound.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
-          "short_id": "711ad7f475c35e5e"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

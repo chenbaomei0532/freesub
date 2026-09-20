@@ -17,42 +17,17 @@ proxies:
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
   client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: cloud.figmafound.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: cloud.figmafound.org
-  client-fingerprint: qq
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES

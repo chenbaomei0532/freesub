@@ -5,42 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 188.166.49.168
-  port: 2083
+  server: 188.114.97.8
+  port: 8443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: cdn8848.776676.xyz
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 202.181.177.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: msk.frkn.org
   port: 443
@@ -50,6 +43,18 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 46.8.200.91
   port: 443
   udp: true
@@ -74,6 +79,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +90,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

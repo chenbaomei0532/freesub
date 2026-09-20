@@ -5,26 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "46.243.142.227",
-      "server_port": 10443,
-      "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "54.179.79.12",
+      "server_port": 53646,
+      "uuid": "d57b9436-a238-4066-8b11-d23ae57c5982",
       "tls": {
         "enabled": true,
-        "server_name": "shprcdn.quest",
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k",
-          "short_id": ""
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "google.storage.v2.Storage"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
       }
     },
     {
@@ -32,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
