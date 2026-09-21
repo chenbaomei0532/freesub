@@ -6,9 +6,28 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "81.90.25.152",
-      "server_port": 34302,
-      "uuid": "e9a7f2c2-51bd-4a81-de35-26b369e2585b"
+      "server": "104.21.39.30",
+      "server_port": 443,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "tls": {
+        "enabled": true,
+        "server_name": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicHV2Z0VMNllZQmtoZEMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
