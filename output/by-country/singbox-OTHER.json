@@ -1,0 +1,54 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.21.37.55",
+      "server_port": 443,
+      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba",
+      "tls": {
+        "enabled": true,
+        "server_name": "6-m16.cHiaN-MAI-8.kDnS.Fr",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
+        "headers": {
+          "Host": "6-M16.chian-mAI-8.KdNs.fR"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
