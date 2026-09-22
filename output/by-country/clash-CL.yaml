@@ -5,6 +5,67 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - xiaohe
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+- name: 🇨🇱 智利 (Chile) 02 - xiaohe
+  server: platform117.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 03 - xiaohe
+  server: 66.235.200.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇱 智利 (Chile) 04 - xiaohe
+  server: platform109.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 05 - xiaohe
+  server: 66.235.200.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇱 智利 (Chile) 06 - xiaohe
   server: 34.176.98.128
   port: 443
   udp: true
@@ -15,18 +76,28 @@ proxies:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 03 - xiaohe
+  - 🇨🇱 智利 (Chile) 04 - xiaohe
+  - 🇨🇱 智利 (Chile) 05 - xiaohe
+  - 🇨🇱 智利 (Chile) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 03 - xiaohe
+  - 🇨🇱 智利 (Chile) 04 - xiaohe
+  - 🇨🇱 智利 (Chile) 05 - xiaohe
+  - 🇨🇱 智利 (Chile) 06 - xiaohe
 rules:
 - MATCH,PROXIES
