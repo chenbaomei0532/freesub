@@ -4,32 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.37.55
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 104.17.169.13
+  port: 2053
   udp: true
   type: vless
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   tls: true
-  servername: 6-m16.cHiaN-MAI-8.kDnS.Fr
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    path: /axch1mttbxz2k55y01
     headers:
-      Host: 6-M16.chian-mAI-8.KdNs.fR
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 rules:
 - MATCH,PROXIES

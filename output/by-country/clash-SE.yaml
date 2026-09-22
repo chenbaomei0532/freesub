@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  server: 84.32.106.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 5d1e8b3f6c2a9d4e
+  servername: my.lunarchaff.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 185.207.66.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 5d1e8b3f6c2a9d4e
+  servername: hexagonicfield.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+rules:
+- MATCH,PROXIES
