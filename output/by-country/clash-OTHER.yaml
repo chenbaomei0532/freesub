@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.calmlunch.com
+  server: 188.114.98.0
   port: 443
   udp: true
   type: trojan

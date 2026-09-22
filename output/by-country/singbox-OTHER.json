@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.calmlunch.com",
+      "server": "188.114.98.0",
       "server_port": 443,
       "password": "humanity",
       "tls": {

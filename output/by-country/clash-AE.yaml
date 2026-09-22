@@ -19,7 +19,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: fabd51c7-89f5-4a4b-8af7-09a515b64f2d
+  uuid: beed721d-73b6-47fc-a7b0-cac10e624b98
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -46,7 +46,7 @@ proxies:
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 84.235.244.108
   port: 22573
