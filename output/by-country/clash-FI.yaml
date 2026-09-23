@@ -17,6 +17,17 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 193.23.201.65
+  port: 5432
+  udp: true
+  type: vless
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: est1313.ggisopi.su
   port: 443
   udp: true
@@ -28,24 +39,47 @@ proxies:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: p1tun3.greewebservices.ir
   port: 2070
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: LMnotcv4RdaEOBXT-LdtfA
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 193.23.201.65
-  port: 5432
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: assets-fi.pleiades.codes
+  port: 443
   udp: true
   type: vless
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: fintanil228.vvzzkontaktezzvv.garden
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   flow: xtls-rprx-vision
   tls: true
-  servername: 193.23.201.65
-  skip-cert-verify: false
-  client-fingerprint: safari
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: fintanil228.vvzzkontaktezzvv.garden
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +89,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +101,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
