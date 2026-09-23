@@ -5,17 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 138.124.60.146
+  server: 151.242.2.81
   port: 443
   udp: true
   type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  flow: xtls-rprx-vision
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   tls: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: usa.oblaco.bet
-  client-fingerprint: chrome
+  servername: cf9.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select

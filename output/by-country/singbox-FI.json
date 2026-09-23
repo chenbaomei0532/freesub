@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "iq5ny.pleiades.codes",
-      "server_port": 8443,
-      "password": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
-      "tls": {
-        "enabled": true,
-        "server_name": "iq5ny.pleiades.codes",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
       "server": "193.23.201.65",
       "server_port": 5432,
       "uuid": "e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee",
@@ -34,22 +22,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "62.60.229.124",
-      "server_port": 8443,
-      "uuid": "5b754a1a-11aa-4df9-a8ba-44af9a579fe1",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
       "tls": {
         "enabled": true,
-        "server_name": "finland.b2ai.top",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts",
-          "short_id": ""
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
     },
@@ -59,8 +46,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
@@ -68,8 +54,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
