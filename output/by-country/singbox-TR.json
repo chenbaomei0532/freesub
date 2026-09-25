@@ -6,12 +6,25 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "185.87.24.9",
-      "server_port": 2085,
-      "uuid": "edc86071-abb7-4f33-be52-fa956c0abc77",
+      "server": "206.1.98.86",
+      "server_port": 18443,
+      "uuid": "33e40dec-442b-46b2-b9b3-be1848ce7df8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYVNm1Huc5MMhVUBDAO5O7O7mjZXjxESWUQzVPIoqjM",
+          "short_id": "ca"
+        }
+      },
       "transport": {
         "type": "grpc",
-        "service_name": "vless"
+        "service_name": "@tunelm2mvpn@tunelm2mvpn@tunelm2mvpn"
       }
     },
     {
