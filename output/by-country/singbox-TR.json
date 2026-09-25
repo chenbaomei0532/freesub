@@ -4,15 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "206.1.98.34",
-      "server_port": 26066,
-      "uuid": "Nitro_Skybot@",
-      "security": "auto",
+      "server": "185.87.24.9",
+      "server_port": 2085,
+      "uuid": "edc86071-abb7-4f33-be52-fa956c0abc77",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
