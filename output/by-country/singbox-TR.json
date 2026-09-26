@@ -5,9 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "194.87.59.10",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "185.87.24.169",
       "server_port": 2085,
+      "uuid": "e8267fb2-155e-4e5b-afc8-04558de60b01",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "93.190.8.20",
+      "server_port": 3090,
       "uuid": "e8267fb2-155e-4e5b-afc8-04558de60b01",
       "transport": {
         "type": "grpc",
@@ -19,14 +30,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
