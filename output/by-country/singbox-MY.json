@@ -6,19 +6,39 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "5.253.36.155",
-      "server_port": 8443,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "1108a.0zkp.ysj.hh.vavava.kdns.fr",
-        "insecure": false
-      },
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/platform102"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
+      "server": "platform108.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform108",
         "headers": {
-          "Host": "1108a.0zkp.ysj.hh.vavava.kdns.fr"
+          "Host": "platform108.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
         }
       }
     },
@@ -27,14 +47,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

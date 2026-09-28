@@ -5,30 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 5.253.36.155
-  port: 8443
+  server: platform102.golnamakcert.top
+  port: 80
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 1108a.0zkp.ysj.hh.vavava.kdns.fr
-  skip-cert-verify: false
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /
+    path: /platform102
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  server: platform108.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
     headers:
-      Host: 1108a.0zkp.ysj.hh.vavava.kdns.fr
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
