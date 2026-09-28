@@ -6,39 +6,39 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "platform102.golnamakcert.top",
+      "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform102"
+        "path": "/platform103"
       }
     },
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-      "server": "platform108.golnamakcert.top",
+      "server": "platform128.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108",
+        "path": "/platform128",
         "headers": {
-          "Host": "platform108.halalkhor.info"
+          "Host": "platform128.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-      "server": "platform103.golnamakcert.top",
+      "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform103",
+        "path": "/platform101",
         "headers": {
-          "Host": "platform103.halalkhor.info"
+          "Host": "platform101.halalkhor.info"
         }
       }
     },
