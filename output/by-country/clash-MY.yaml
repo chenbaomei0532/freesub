@@ -5,13 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 47.250.135.244
-  port: 10000
+  server: 5.253.36.155
+  port: 8443
   udp: true
-  type: vmess
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 1108a.0zkp.ysj.hh.vavava.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1108a.0zkp.ysj.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
