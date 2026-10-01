@@ -18,7 +18,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "162.249.127.144",
+      "server": "162.249.127.137",
       "server_port": 8443,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
@@ -49,13 +49,26 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
+      "server": "38.180.35.145",
+      "server_port": 443,
+      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "tls": {
+        "enabled": true,
+        "server_name": "bu2.freeguard.org",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe"
       ]
     },
     {
@@ -64,7 +77,8 @@
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
