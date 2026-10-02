@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.18.34.21",
-      "server_port": 8443,
-      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
+      "server": "45.132.177.96",
+      "server_port": 9889,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
       "tls": {
         "enabled": true,
-        "server_name": "socks5.revil-time3.workers.dev",
-        "insecure": false,
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/socks5://128.140.46.169:13482",
-        "headers": {
-          "Host": "socks5.revil-time3.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
