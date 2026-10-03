@@ -4,27 +4,43 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "8783f44d-tmm5c0-tphxte-1h5u7.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "e3fdbd22-8c17-11ee-ace4-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "8783f44d-tmm5c0-tphxte-1h5u7.nw4.hyhuawei.com",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+      "server": "162.159.45.19",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "92e6c9f0-tmm5c0-twjnjx-1q9g2.hk3.hyhuawei.com",
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
+      "server": "199.232.78.101",
       "server_port": 443,
-      "password": "9d80dd14-ac44-11ee-a116-f23c9164ca5d",
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "92e6c9f0-tmm5c0-twjnjx-1q9g2.hk3.hyhuawei.com",
-        "insecure": true
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net"
+        }
       }
     },
     {
@@ -52,8 +68,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ]
     },
@@ -61,8 +77,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
