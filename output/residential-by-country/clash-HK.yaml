@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  server: 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
-  sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
+  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  sni: 755802e4-tmm5c0-trnd2c-jjv2.hk3.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -26,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
