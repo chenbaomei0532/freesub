@@ -12,21 +12,7 @@ proxies:
   password: 526a1128-7487-11ee-9bca-f23c913c8d2b
   sni: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 172.66.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
-  tls: true
-  servername: argo6.5671234.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   server: 5e367597-tmm5c0-typ01r-1p0be.hk3.hyhuawei.com
   port: 443
   udp: true
@@ -40,15 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
