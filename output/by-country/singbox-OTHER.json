@@ -5,15 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "cctvhikvision.center",
+      "server_port": 2052,
+      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
