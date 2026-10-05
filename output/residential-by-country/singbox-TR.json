@@ -4,29 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+      "server": "212.74.39.235",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
