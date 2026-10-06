@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "185.103.110.68",
       "server_port": 18283,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "hysteria2",
@@ -27,29 +27,20 @@
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
+        "server_name": "144.31.212.253",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "188.130.209.216",
-      "server_port": 443,
-      "uuid": "444623e9-f27d-487c-b7cc-436931967e79",
-      "flow": "xtls-rprx-vision",
+      "server": "78.17.209.108",
+      "server_port": 8444,
+      "password": "d402d4c0b8354a90b70bb2566dce9a08",
       "tls": {
         "enabled": true,
-        "server_name": "emaar.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M7yPV6xLi9h6EevpqZfXLZBuxoey8kz1c6Bh0pK5fho",
-          "short_id": "170ab9ced015571f"
-        }
+        "server_name": "i.wareznet.ru",
+        "insecure": true
       }
     },
     {
