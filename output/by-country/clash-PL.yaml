@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 70.34.252.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 70.34.255.101
   port: 80
   udp: true
@@ -22,22 +13,31 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 70.34.252.154
+  port: 80
+  udp: true
+  type: vless
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: mix.pantera-radio.ru
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4ffc5c57-3242-4422-88de-25fb0f7e97bc
-  sni: mix.pantera-radio.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 144.31.49.47
   port: 443
@@ -47,19 +47,6 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 31.77.13.19
   port: 2063
   udp: true
@@ -82,7 +69,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,6 +80,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
