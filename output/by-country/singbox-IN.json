@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "65.20.80.141",
-      "server_port": 443,
-      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
-      "flow": "xtls-rprx-vision",
+      "server": "211.20.156.191",
+      "server_port": 28163,
+      "password": "i99Cef",
       "tls": {
         "enabled": true,
-        "server_name": "googleapis.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
-          "short_id": ""
-        }
+        "server_name": "ctldl.windowsupdate.com",
+        "insecure": true
       }
     },
     {
@@ -33,7 +24,10 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
       }
     },
     {
