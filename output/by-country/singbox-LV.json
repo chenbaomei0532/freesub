@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-      "server": "89.125.96.76",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
-        "headers": {
-          "Host": "wss.zazazuza.ru"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
