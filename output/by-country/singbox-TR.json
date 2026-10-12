@@ -5,27 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-      "server": "89.125.96.89",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
-        "headers": {
-          "Host": "wss.zazazuza.ru"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
