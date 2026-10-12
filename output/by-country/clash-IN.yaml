@@ -16,17 +16,16 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 217.217.249.70
-  port: 43000
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 47b83a67-f69d-4d15-9c63-73b7cd0f7d26
-  flow: xtls-rprx-vision
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   tls: true
   reality-opts:
-    public-key: 3gTzdNHyWfheX_IrYiMoraornFzYxPFU9EGirW1gfRk
-    short-id: 99f735c4
-  servername: 217.217.249.70
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
   client-fingerprint: random
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.tronsg.com
