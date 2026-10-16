@@ -12,18 +12,50 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "server": "kozyavka.yandex-api.com",
+      "server_port": 443,
+      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kozyavka.yandex-api.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ",
+          "short_id": "a9dc98a7dc87a7dc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+      "server": "138.124.90.177",
+      "server_port": 10443,
+      "uuid": "3a0e4040-67cc-43e0-a9fb-98e15ddb0526"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
-  server: 39.108.113.127
+  server: 120.48.133.162
   port: 10086
   udp: true
   type: vmess
