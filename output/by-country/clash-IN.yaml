@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
+  server: in.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -15,7 +23,7 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 02 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -26,33 +34,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 148.113.5.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 5.253.29.254
-  port: 10443
-  udp: true
-  type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+    headers:
+      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +44,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,7 +52,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES
