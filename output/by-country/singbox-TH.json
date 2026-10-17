@@ -36,19 +36,65 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-      "server": "104.16.111.193",
+      "server": "103.40.119.56",
+      "server_port": 11000,
+      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+      "server": "104.18.26.90",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
           "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 06 - xiaohe",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 56415,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.kaidee.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
+          "short_id": "cbd39bea0805e2"
         }
       }
     },
@@ -60,7 +106,9 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 06 - xiaohe"
       ]
     },
     {
@@ -70,7 +118,9 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 05 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
