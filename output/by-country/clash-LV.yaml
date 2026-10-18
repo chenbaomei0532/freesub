@@ -16,7 +16,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: lv.aiage.work
   port: 443
@@ -31,18 +31,13 @@ proxies:
   servername: lv.aiage.work
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 195.123.208.32
+  server: 193.233.88.26
   port: 443
   udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
+  sni: ru1server.rabstvo.shop
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

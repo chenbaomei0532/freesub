@@ -19,8 +19,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 5.253.29.254
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 5.253.30.99
   port: 40443
@@ -33,7 +31,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   server: hydra.yokkastars.com
   port: 2443
