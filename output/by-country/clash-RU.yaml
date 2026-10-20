@@ -39,30 +39,18 @@ proxies:
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 153.80.241.206
-  port: 8444
+  server: 139.28.168.75
+  port: 10444
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 185.147.27.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  uuid: 154bd388-4968-4900-a088-18676f428a20
   flow: xtls-rprx-vision
   tls: true
-  servername: user-6a917f32.noooo.win
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +60,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +69,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
