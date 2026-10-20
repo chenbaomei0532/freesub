@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 148.113.5.44
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   tls: true
   reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 13.140.56.100
   port: 14430
@@ -29,17 +28,18 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 194.61.31.126
-  port: 2053
+  server: 140.245.28.182
+  port: 443
   udp: true
   type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  uuid: acaaa258-e833-490b-a330-db4b97d605aa
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: sE7iHMdyFUNBBSGfqDm_XdIIgeEv734REAGl6oP-XAQ
+    short-id: 6c782575
+  servername: updates.cdn-apple.com
+  client-fingerprint: ios
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 152.67.8.205
   port: 80
