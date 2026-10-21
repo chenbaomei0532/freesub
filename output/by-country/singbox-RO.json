@@ -35,7 +35,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
