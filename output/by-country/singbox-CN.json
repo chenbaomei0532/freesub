@@ -16,10 +16,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "path": "/vlessws"
       }
     },
     {
