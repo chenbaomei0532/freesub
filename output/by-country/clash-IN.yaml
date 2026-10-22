@@ -50,7 +50,7 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: ios
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
