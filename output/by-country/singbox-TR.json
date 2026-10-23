@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
-      "server": "pl1.h1cloud.net",
-      "server_port": 27591,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
-          "short_id": "6c5c7900406a1ae7"
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
