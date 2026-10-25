@@ -11,24 +11,83 @@ proxies:
   type: vless
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 151.241.138.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  tls: true
+  servername: cj1zbqb16amm.hat.onl
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: v1.segment.9099K6xCUJFolqrvvjWHzO0shnIQZkWopQ20zcM6.ts
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 151.241.138.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  tls: true
+  servername: m37wv2rk.hat.onl
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: media.vs31ppigl.v2.PlaybackRelay
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 151.241.138.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  tls: true
+  servername: pqeumz9zs.hat.onl
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vod.rmbxyignqfOOrue8HKvvsrjzpNeju9_7.frag.302.mp4
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 2.27.244.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  tls: true
+  servername: qbak5xqeb.hat.onl
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: media.uxvgqd.v1.PlaybackStream
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: pl1.h1cloud.net
-  port: 27591
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: 151.241.138.58
+  port: 443
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
   tls: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-    short-id: 6c5c7900406a1ae7
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  servername: i6v77egmox.hat.onl
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: hls.4s05-998t.8-qyShEYmHZ_zmes.m3u8
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -50,6 +109,11 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +123,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
