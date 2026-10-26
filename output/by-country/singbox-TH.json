@@ -12,36 +12,22 @@
       "tls": {
         "enabled": true,
         "server_name": "th001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "pphfree1.mvpnpvpn.de5.net",
-      "server_port": 52351,
-      "method": "aes-256-gcm",
-      "password": "prDjNd1ILAuMYRhgRL+xcBWXcfH9d89ogZTxayqomLA="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
