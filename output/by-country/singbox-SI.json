@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "79.98.37.106",
+      "tag": "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe",
+      "server": "92.42.201.102",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "uuid": "d0c8aa8d-a535-432a-b521-21f0e561f643",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
+        "server_name": "node-slo01.rkitman.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
+          "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
+          "short_id": "88d9dc52ef39c8bd"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
