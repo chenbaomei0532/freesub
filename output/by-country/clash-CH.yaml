@@ -5,20 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
+  server: 162.159.152.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 132.243.175.144
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  server: 83.147.216.223
+  port: 4433
+  udp: true
+  type: vless
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   server: 140.238.213.114
   port: 50160
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: 140.238.213.114
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +68,9 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +78,8 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
