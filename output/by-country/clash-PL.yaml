@@ -11,20 +11,12 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl1.obxodvpn.us
-  port: 4443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: poland-new-new.failspace.top
   port: 443
   udp: true
@@ -35,32 +27,7 @@ proxies:
   servername: poland-new-new.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 31.184.253.134
-  port: 53869
-  udp: true
-  type: vless
-  uuid: 252b4a9c-520d-459c-9dbc-366995206089
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rtc2Krk2fVhHCRG82EsUc4_mlw304HKHkl6MggQZEAU
-    short-id: 0f2cc340a69ed7
-  servername: www.moddb.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -70,7 +37,28 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 77.232.135.141
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 191.217.251.225
+  port: 4443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -95,7 +83,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,6 +95,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -10,16 +10,21 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 103.115.109.49
-  port: 443
+  server: 83.147.14.168
+  port: 9443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
+  type: vless
+  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
