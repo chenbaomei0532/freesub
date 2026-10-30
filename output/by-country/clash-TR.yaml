@@ -19,27 +19,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: free.ertebatgoostar.ir
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
