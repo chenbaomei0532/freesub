@@ -32,7 +32,7 @@ proxies:
   type: hysteria2
   password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   sni: diffoscope.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
