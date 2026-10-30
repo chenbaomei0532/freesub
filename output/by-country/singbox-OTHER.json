@@ -4,40 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.17.148.22",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.17.148.22",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
+        "server_name": "jp3.yohototo.top",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "www.ignitelimit.com"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
