@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "160.187.100.109",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
@@ -23,7 +23,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
@@ -52,15 +52,22 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 45502,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
       "tls": {
         "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
+        "server_name": "n04.jinggai.online",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
+        }
       }
     },
     {
