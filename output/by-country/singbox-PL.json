@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "2.26.255.215",
       "server_port": 443,
       "uuid": "69e41e64-a832-471a-b740-94577ca85520",
@@ -25,30 +37,19 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "70.34.252.255",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "87.242.119.253",
-      "server_port": 443,
-      "uuid": "aba9cdd4-026c-0001-87a9-9b3e5f24dd82",
+      "server": "188.225.62.62",
+      "server_port": 7443,
+      "uuid": "6116f0f3-15eb-4217-b38e-16514dc00ba1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hvtlr-ru-47sb.fade.mom",
+        "server_name": "ru2.datacore-tech.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         }
       }
     },
