@@ -17,7 +17,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "31.76.227.57",
+      "server": "app-mi-26.spbstudentlife.com",
       "server_port": 443,
       "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
       "flow": "xtls-rprx-vision",
