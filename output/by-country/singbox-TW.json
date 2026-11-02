@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
@@ -23,7 +23,43 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https",
+        "server_name": "103.115.109.49",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "47.129.112.129",
+      "server_port": 20000,
+      "password": "CQUPACy34t6Tjx8FdQdkCiYW",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
         "insecure": true
       }
     },
@@ -33,7 +69,10 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
       ]
     },
     {
@@ -41,7 +80,10 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
