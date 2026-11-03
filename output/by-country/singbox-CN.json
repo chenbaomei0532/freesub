@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.windowsmsidownloads.com",
+      "type": "vless",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "104.21.91.49",
       "server_port": 443,
-      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
-      "security": "auto",
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "www.windowsmsidownloads.com",
+        "server_name": "vpn.cintaku.qzz.io",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/vlessws",
         "headers": {
-          "Host": "www.windowsmsidownloads.com"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
