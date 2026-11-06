@@ -18,9 +18,26 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "104.24.0.1",
+      "server": "157.180.81.207",
+      "server_port": 443,
+      "uuid": "471b3557-91da-44bc-a215-30b8a6fdee79",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "TcpTlsDigikaLa.SavfaSf.iR.",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "172.66.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -40,32 +57,6 @@
         "path": "/",
         "headers": {
           "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "latvia.zovip2.ir",
-      "server_port": 443,
-      "uuid": "5a79e684-54c8-44c0-807a-225f9ea8c0ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "nova.zovip2.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v3/pulse",
-        "headers": {
-          "Host": "nova.zovip2.ir"
         }
       }
     },
