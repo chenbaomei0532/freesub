@@ -16,18 +16,31 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 157.180.81.207
-  port: 443
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 471b3557-91da-44bc-a215-30b8a6fdee79
+  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
   flow: xtls-rprx-vision
   tls: true
-  servername: TcpTlsDigikaLa.SavfaSf.iR.
-  skip-cert-verify: false
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: hostgator.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 172.66.0.1
+  server: 199.232.8.223
+  port: 443
+  udp: true
+  type: trojan
+  password: TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ
+  sni: community.fastly.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 188.114.96.3
   port: 2053
   udp: true
   type: trojan
@@ -45,6 +58,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +67,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
