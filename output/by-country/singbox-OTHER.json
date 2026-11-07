@@ -5,22 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "198.16.113.219",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "n04.jinggai.online",
       "server_port": 8443,
-      "uuid": "e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4",
-      "flow": "xtls-rprx-vision",
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
-          "short_id": "69984b9e02545831"
+        "server_name": "n04.jinggai.online",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
         }
       }
     },
@@ -29,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
