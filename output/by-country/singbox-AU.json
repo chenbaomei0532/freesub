@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "anytls",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "user02.godvpn.lol",
+      "server_port": 62405,
+      "password": "4bbfa33a-449a-4a50-8dfc-6d0de880f7bc",
       "tls": {
         "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "server_name": "user02.godvpn.lol",
+        "insecure": true
       }
     },
     {
