@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: fi1.obxodvpn.us
+  server: 177.202.75.56
   port: 443
   udp: true
   type: hysteria2
@@ -24,26 +24,20 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 72.35.246.39
-  port: 2053
+  server: 146.103.118.189
+  port: 443
   udp: true
   type: vless
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  flow: xtls-rprx-vision
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   tls: true
-  reality-opts:
-    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
-    short-id: 5e39e518bfac6392
-  servername: vk.ru
-  client-fingerprint: chrome
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +46,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +54,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
