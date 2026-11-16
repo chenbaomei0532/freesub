@@ -19,34 +19,14 @@
       "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "1",
+        "server_name": "off",
         "insecure": true
       }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
-      "server": "104.24.0.1",
+      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
+      "server": "104.19.164.155",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -67,24 +47,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
-        "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe",
-        "🇯🇵 日本 (Japan) 05 - xiaohe",
-        "🇯🇵 日本 (Japan) 06 - xiaohe"
+        "🇯🇵 日本 (Japan) 03 - xiaohe"
       ]
     },
     {
@@ -93,10 +62,7 @@
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
-        "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe",
-        "🇯🇵 日本 (Japan) 05 - xiaohe",
-        "🇯🇵 日本 (Japan) 06 - xiaohe"
+        "🇯🇵 日本 (Japan) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

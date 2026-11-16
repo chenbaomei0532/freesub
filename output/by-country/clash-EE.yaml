@@ -5,13 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 217.60.182.154
-  port: 443
+  server: 45.86.60.174
+  port: 16443
   udp: true
-  type: hysteria2
-  password: b36a14f8-fc3f-4142-968f-48031cf5f330
-  sni: hy2-eee-1.aloranode.top
-  skip-cert-verify: false
+  type: vless
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 proxy-groups:
 - name: PROXIES
   type: select
