@@ -26,20 +26,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "d58daft.plp1.h1cloud.net",
+      "server": "212.87.190.249",
       "server_port": 443,
-      "uuid": "c82031be-e90f-4b15-ab4f-7ccef236d3ca",
+      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "d58daft.plp1.h1cloud.net",
+        "server_name": "d4a338t.pl8.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4",
-          "short_id": "a91531ad58c8611c"
+          "public_key": "0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA",
+          "short_id": "b545243c33282b73"
         }
       }
     },

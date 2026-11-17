@@ -17,17 +17,18 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: d58daft.plp1.h1cloud.net
+  server: 212.87.190.249
   port: 443
   udp: true
   type: vless
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
-    short-id: a91531ad58c8611c
-  servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: chrome
+    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
+    short-id: b545243c33282b73
+  servername: d4a338t.pl8.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
