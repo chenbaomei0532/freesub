@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 178.130.46.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: nl16-r.bankai.party
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 147.45.47.101
   port: 8443
   udp: true
@@ -29,15 +17,32 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 178.130.46.188
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: nl16-r.bankai.party
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 94.228.123.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg
+  servername: ghjgdfgdfghjmb.wey-land.net
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 201.51.12.98
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
@@ -45,7 +50,7 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
@@ -63,7 +68,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 94.228.123.26
+  server: 81.200.152.153
   port: 443
   udp: true
   type: vless
@@ -71,9 +76,9 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg
-  servername: ghjgdfgdfghjmb.wey-land.net
-  client-fingerprint: qq
+    public-key: t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM
+  servername: gmbasdasd.wey-land.net
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
