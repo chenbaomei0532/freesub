@@ -4,28 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 93.88.206.70
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: 104.17.3.81
   port: 443
   udp: true
   type: vless
-  uuid: 44ddb84a-f152-47ef-a970-fd63f2df9b30
-  flow: xtls-rprx-vision
+  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
   tls: true
-  servername: pulse.sevka.xyz
+  servername: natan.srpcom.cloud
   skip-cert-verify: false
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: natan.srpcom.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
