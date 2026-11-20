@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 87.76.154.28
+  port: 57231
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 rules:
 - MATCH,PROXIES
