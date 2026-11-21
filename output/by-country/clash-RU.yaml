@@ -29,17 +29,9 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 201.51.12.98
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -47,10 +39,18 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 103.88.243.142
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 147.45.175.81
   port: 443
