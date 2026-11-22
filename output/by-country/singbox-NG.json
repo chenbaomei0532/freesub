@@ -4,22 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "38.60.230.151",
-      "server_port": 443,
-      "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
+      "type": "trojan",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
+      "server": "157.254.38.210",
+      "server_port": 20103,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
         "enabled": true,
-        "server_name": "navi.bankrate.com",
+        "server_name": "hk.catxstar.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
         }
       }
     },
@@ -28,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
