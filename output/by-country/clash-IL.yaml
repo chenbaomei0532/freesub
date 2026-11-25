@@ -17,17 +17,34 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
+  server: 13.141.36.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
+  tls: true
+  reality-opts:
+    public-key: oE6MuoxfZqB5fkSnx_XWL28kNoBGODAQk58pRNS3qXY
+    short-id: d28c89350a91e479
+  servername: 9030b9g.pl10.h1clayd.shop
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8b45c3fd2e05
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 02 - xiaohe
 rules:
 - MATCH,PROXIES
