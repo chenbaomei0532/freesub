@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -27,25 +27,25 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "13.141.36.51",
+      "server": "196.245.153.156",
       "server_port": 443,
-      "uuid": "d92038b6-b470-4267-9c69-2c649bf3f4a4",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "9030b9g.pl10.h1clayd.shop",
+        "server_name": "961ec0g.nl17.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "oE6MuoxfZqB5fkSnx_XWL28kNoBGODAQk58pRNS3qXY",
-          "short_id": "d28c89350a91e479"
+          "public_key": "xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA",
+          "short_id": "6d289ff0f47c0aac"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "8b45c3fd2e05"
+        "service_name": "7d5abcd7d8a1"
       }
     },
     {
