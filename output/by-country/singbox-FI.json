@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "195.123.226.21",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "mail3.besttotaldns.com",
       "server_port": 443,
-      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
-      "flow": "xtls-rprx-vision",
+      "uuid": "18fe142e-1522-47ae-af55-bd8daf6273df",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "mail3.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
-          "short_id": "77bb0d07bddbc832"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wo9a5v3jcz",
+        "headers": {
+          "Host": "mail3.besttotaldns.com"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

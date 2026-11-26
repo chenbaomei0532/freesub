@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 149.22.87.204
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
@@ -50,18 +50,6 @@ proxies:
   ws-opts:
     path: /e0856508-d693-450a-a099-455091dc4f25-vm
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 156.231.117.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 155.248.175.201
   port: 23169
   udp: true
@@ -71,37 +59,47 @@ proxies:
   tls: true
   servername: djj.zjlo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 149.28.29.156
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  server: 8.209.247.109
   port: 443
   udp: true
-  type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: JP032011.ssgreen.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 4b9dc0c5-388d-45c5-9ad3-a91db984784e
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  servername: JP032011.ssgreen.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /wes
     headers:
-      Host: itunes.apple.com
+      Host: JP032011.ssgreen.org
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: vl-x2.qz10086.top
-  port: 38105
+  server: JP032010.ssgreen.org
+  port: 443
   udp: true
-  type: vless
-  uuid: d235ad20-8f30-441e-871e-ee2695e4c430
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f9a1ee44-21b3-4d0e-81b6-265fa2f3ba57
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: y0p1yI8OoWqcOE4XEv7ueudaSOOc5UIb5yFyA3SstD8
-    short-id: 7e7e8c23
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: JP032010.ssgreen.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032010.ssgreen.org
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
   server: 104.19.33.25
   port: 443
@@ -116,6 +114,25 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,6 +148,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 08 - xiaohe
   - 🇯🇵 日本 (Japan) 09 - xiaohe
   - 🇯🇵 日本 (Japan) 10 - xiaohe
+  - 🇯🇵 日本 (Japan) 11 - xiaohe
+  - 🇯🇵 日本 (Japan) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,5 +165,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 08 - xiaohe
   - 🇯🇵 日本 (Japan) 09 - xiaohe
   - 🇯🇵 日本 (Japan) 10 - xiaohe
+  - 🇯🇵 日本 (Japan) 11 - xiaohe
+  - 🇯🇵 日本 (Japan) 12 - xiaohe
 rules:
 - MATCH,PROXIES
