@@ -5,27 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
   server: 158.101.151.157
   port: 443
   udp: true
@@ -38,83 +49,15 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 161.33.20.255
-  port: 8880
-  udp: true
-  type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 155.248.175.201
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 8.209.247.109
-  port: 443
+  server: 8.211.175.236
+  port: 8443
   udp: true
   type: hysteria2
-  password: usqmqUKJFIlCmvkCNSY64L3k
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: JP032011.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 4b9dc0c5-388d-45c5-9ad3-a91db984784e
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032011.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032011.ssgreen.org
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: JP032010.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f9a1ee44-21b3-4d0e-81b6-265fa2f3ba57
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032010.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
-- name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.19.33.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 168.138.43.75
   port: 80
   udp: true
@@ -125,14 +68,32 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: 8.211.175.236
-  port: 8443
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 168.110.63.247
+  port: 8081
   udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  server: 104.16.111.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,9 +108,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 07 - xiaohe
   - 🇯🇵 日本 (Japan) 08 - xiaohe
   - 🇯🇵 日本 (Japan) 09 - xiaohe
-  - 🇯🇵 日本 (Japan) 10 - xiaohe
-  - 🇯🇵 日本 (Japan) 11 - xiaohe
-  - 🇯🇵 日本 (Japan) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,8 +122,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 07 - xiaohe
   - 🇯🇵 日本 (Japan) 08 - xiaohe
   - 🇯🇵 日本 (Japan) 09 - xiaohe
-  - 🇯🇵 日本 (Japan) 10 - xiaohe
-  - 🇯🇵 日本 (Japan) 11 - xiaohe
-  - 🇯🇵 日本 (Japan) 12 - xiaohe
 rules:
 - MATCH,PROXIES
