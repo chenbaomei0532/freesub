@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "202.146.222.174",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "https://t.me/clashv8🇨🇳",
         "insecure": true
       }
     },
@@ -23,25 +23,66 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "httpst.mewangcai2",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-      "server": "202.146.222.89",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+      "server": "116.213.43.43",
+      "server_port": 11103,
+      "uuid": "bb836d81-d0c5-4f01-a584-806cdf65e36a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4",
+          "short_id": "9564e1a7a1cf8b3a"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
+      "server": "47.86.90.31",
+      "server_port": 443,
+      "uuid": "234a8041-2b4d-44a3-a8d8-523cbfd58dc4",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "bywxdhirqkjj8xaz.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "bywxdhirqkjj8xaz.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
       "server": "leviko-hk5202.shopingggg.ir",
       "server_port": 31001,
       "uuid": "12a4f736-2238-49ee-831f-5516f15cc951",
@@ -61,8 +102,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
+      "server": "waic.pro.main.sys-metric-report.com",
+      "server_port": 28014,
+      "method": "chacha20-ietf-poly1305",
+      "password": "abc62f00-95a8-4c2e-a85d-36a2cdc977da"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -74,47 +123,6 @@
       "obfs": {
         "type": "salamander",
         "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
-      "server": "waic.pro.main.sys-metric-report.com",
-      "server_port": 28014,
-      "method": "chacha20-ietf-poly1305",
-      "password": "abc62f00-95a8-4c2e-a85d-36a2cdc977da"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
-      "server": "116.213.43.43",
-      "server_port": 11102,
-      "uuid": "530d31fc-2690-49e4-bfc9-3f991e145008",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0",
-          "short_id": "ed571d022f7bc3bf"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
-      "server": "47.242.93.89",
-      "server_port": 12012,
-      "password": "12012",
-      "tls": {
-        "enabled": true,
-        "server_name": "ali-hk.b-gfw.cfd",
-        "insecure": true
       }
     },
     {
